@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),Object.defineProperty(exports,"test",{enumerable:!0,get:function(){return e}});var e=function(){console.log("world","test")};
