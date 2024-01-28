@@ -8,7 +8,7 @@ class HomeComponent extends HTMLElement {
     template.innerHTML = `
       <style>
         h2 {
-          color: red;
+          color: blue;
         }
       </style>
       <h2>홈</h2>
