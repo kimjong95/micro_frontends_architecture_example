@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "serve public -p 3001 --cors",
+    "dev": "serve public -p 3002 --cors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

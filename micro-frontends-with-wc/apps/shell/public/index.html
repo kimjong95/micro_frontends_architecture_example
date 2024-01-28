@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Micro Frontends Example</title>
+    <style>
+      h2 {
+        color: pink;
+      }
+    </style>
+
+    <script src="http://localhost:3001/bundle.js"></script>
+    <script src="http://localhost:3002/bundle.js"></script>
+  </head>
+  <body>
+    <h1>애플리케이션 루트</h1>
+    <nav>
+      <ul>
+        <li><a href="/">홈</a></li>
+        <li><a href="/jobs">채용공고</a></li>
+      </ul>
+    </nav>
+    <div id="app"></div>
+    <script type="text/javascript">
+      const webComponentsByRoute = {
+        "/": "home-component",
+        "/jobs": "jobs-component",
+      };
+      const webComponentType = webComponentsByRoute[window.location.pathname];
+
+      const root = document.getElementById("app");
+      const webComponent = document.createElement(webComponentType);
+      root.appendChild(webComponent);
+    </script>
+  </body>
+</html>
